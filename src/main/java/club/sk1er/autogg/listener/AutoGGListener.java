@@ -225,7 +225,7 @@ public class AutoGGListener {
             return primaryStrings[autoGGPhrase];
         } else { // invalid config
             throw new RuntimeException("An unknown error occurred parsing config. Try deleting " +
-                    ".minecraft/config/autogg.toml or contacting the mod authors.");
+                    ".minecraft/config/autobruh.toml or contacting the mod authors.");
         }
     }
 }

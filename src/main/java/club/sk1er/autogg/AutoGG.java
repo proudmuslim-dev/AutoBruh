@@ -48,13 +48,13 @@ import java.nio.charset.Charset;
 import java.util.*;
 import java.util.regex.Pattern;
 
-@Mod(modid = "autogg", name = "AutoGG", version = AutoGG.VERSION)
+@Mod(modid = "autobruh", name = "AutoBruh", version = AutoGG.VERSION)
 public class AutoGG {
-    public static final String VERSION = "4.0.3";
+    public static final String VERSION = "4.0.4";
     private static final String[] ACCEPTED_CONFIG_VERSIONS = {"2"};
     public static boolean validConfigVersion, triggerFetchSuccess = true; // independent of config
-    private final Logger logger = LogManager.getLogger("AutoGG");
-    private final String prefix = ChatColor.BLUE + "[AutoGG] " + ChatColor.RESET;
+    private final Logger logger = LogManager.getLogger("AutoBruh");
+    private final String prefix = ChatColor.BLUE + "[AutoBrubruhh] " + ChatColor.RESET;
     private static JsonObject triggerJson;
     public static Map<String, String> triggerMeta;
 
@@ -65,7 +65,7 @@ public class AutoGG {
     private AutoGGConfig autoGGConfig;
     private boolean running;
 
-    @Mod.Instance("autogg")
+    @Mod.Instance("autobruh")
     public static AutoGG instance;
 
     @Mod.EventHandler
@@ -109,20 +109,20 @@ public class AutoGG {
                 if (sendChatMsg) {
                     MinecraftUtils.sendMessage(AutoGG.instance.prefix, ChatColor.RED +
                             ChatColor.BOLD.toString() +
-                            "JSON Syntax Error! Contact the mod authors at https://sk1er.club/support-discord if you see this message!");
+                            "JSON Syntax Error! Contact the mod authors at https://grind-up.rocks/and-eat-them if you see this message!");
                 }
 
                 AutoGG.instance.logger.error(
-                        "JSON Syntax Error! Open a ticket in our support server at https://sk1er.club/support-discord.", e);
+                        "JSON Syntax Error! Open a ticket in our support server at https://grind-up.rocks/and-eat-them.", e);
                 triggerFetchSuccess = false;
                 return;
             } catch (AssertionError | NullPointerException e) {
                 if (sendChatMsg) {
                     MinecraftUtils.sendMessage(AutoGG.instance.prefix, ChatColor.RED +
-                            "Unsupported triggers version! Please update AutoGG!");
+                            "Unsupported triggers version! Please update AutoBruh!");
                 }
 
-                AutoGG.instance.logger.error("Unsupported triggers version! Please update AutoGG!");
+                AutoGG.instance.logger.error("Unsupported triggers version! Please update AutoBruh!");
                 validConfigVersion = false;
                 return;
             }

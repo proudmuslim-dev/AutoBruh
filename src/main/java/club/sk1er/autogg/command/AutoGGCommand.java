@@ -56,7 +56,7 @@ public class AutoGGCommand extends CommandBase {
 
     @Override
     public String getCommandName() {
-        return "autogg";
+        return "autobruh";
     }
 
     @Override
@@ -127,7 +127,8 @@ public class AutoGGCommand extends CommandBase {
                 case "credits": {
                     MinecraftUtils.sendMessage(prefix, ChatColor.GREEN +
                         "AutoGG Originally created by 2Pi, continued by Sk1er LLC. " +
-                        "Regex update & multi-server support by SirNapkin1334.");
+                        "Regex update & multi-server support by SirNapkin1334." +
+                        "Conversion to AutoBruh done by Proudmuslim#5818 (IGN: QuietlyCoding).");
                     MinecraftUtils.sendMessage(prefix, ChatColor.GREEN +
                         "Additional special thanks to: LlamaLad7, FalseHonesty, DJTheRedstoner, " +
                         "Pluggs and Unextracted!");
@@ -135,30 +136,21 @@ public class AutoGGCommand extends CommandBase {
                 }
                 default: { // thank you asbyth!
                     ChatComponentText supportDiscordLink = new ChatComponentText(prefix + ChatColor.GREEN +
-                        "For support with AutoGG, go to https://sk1er.club/support-discord.");
+                        "For support with AutoBruh, go to https://grind-up.rocks/and-eat-them and stare at your reflection contemplating your life choices.");
                     supportDiscordLink.getChatStyle().setChatClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL,
-                        "https://sk1er.club/support-discord"));
+                        "https://grind-up.rocks/and-eat-them"));
                     supportDiscordLink.getChatStyle().setChatHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
                         new ChatComponentText("Click to join our support Discord.")));
 
-                    ChatComponentText discordLink = new ChatComponentText(prefix + ChatColor.GREEN +
-                            "For the community server for all Sk1er mods, go to https://discord.gg/sk1er.");
-                    discordLink.getChatStyle().setChatClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL,
-                            "https://discord.gg/sk1er"));
-                    discordLink.getChatStyle().setChatHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
-                            new ChatComponentText("Click to join our community Discord.")));
-
-
-                    ChatComponentText autoGGConfig = new ChatComponentText(prefix + ChatColor.GREEN +
-                        "To configure AutoGG, run /autogg.");
-                    autoGGConfig.getChatStyle().setChatClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND,
-                        "/autogg"));
-                    autoGGConfig.getChatStyle().setChatHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
-                        new ChatComponentText("Click to run /autogg.")));
+                    ChatComponentText autoBruhConfig = new ChatComponentText(prefix + ChatColor.GREEN +
+                        "To configure AutoBruh, run /autobruh.");
+                    autoBruhConfig.getChatStyle().setChatClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND,
+                        "/autobruh"));
+                    autoBruhConfig.getChatStyle().setChatHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
+                        new ChatComponentText("Click to run /autobruh.")));
 
                     Minecraft.getMinecraft().thePlayer.addChatComponentMessage(supportDiscordLink);
-                    Minecraft.getMinecraft().thePlayer.addChatComponentMessage(discordLink);
-                    Minecraft.getMinecraft().thePlayer.addChatComponentMessage(autoGGConfig);
+                    Minecraft.getMinecraft().thePlayer.addChatComponentMessage(autoBruhConfig);
                     MinecraftUtils.sendMessage(prefix, ChatColor.GREEN +
                         "AutoGG Commands: refresh, info, credits, help");
                     // help doesn't actually exist but that's our secret

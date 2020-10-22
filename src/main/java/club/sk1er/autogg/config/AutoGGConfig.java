@@ -30,19 +30,19 @@ public class AutoGGConfig extends Vigilant {
 
     @Property(
         type = PropertyType.SWITCH,
-        name = "AutoGG",
+        name = "AutoBruh",
         category = "General",
         subcategory = "General",
-        description = "Toggle AutoGG entirely."
+        description = "Toggle AutoBruh entirely."
     )
     private boolean autoGGEnabled = true;
 
     @Property(
         type = PropertyType.SWITCH,
-        name = "Casual AutoGG",
+        name = "Casual AutoBruh",
         category = "General",
         subcategory = "General",
-        description = "Enable AutoGG for things that don't give Karma such as Skyblock Events."
+        description = "Enable AutoBruh for things that don't give Karma such as Skyblock Events."
     )
     private boolean casualAutoGGEnabled;
 
@@ -80,7 +80,7 @@ public class AutoGGConfig extends Vigilant {
         category = "General",
         subcategory = "General",
         description = "Choose what message is said on game completion",
-        options = {"gg", "GG", "gf", "Good Game", "Good Fight", "Good Round! :D"}
+        options = {"Bruh", "Gruh", "buh", "druh", "cringe", "gringe", "gringecells", "eࠀz /s"}
     )
     private int autoGGPhrase = 1;
 
@@ -89,7 +89,7 @@ public class AutoGGConfig extends Vigilant {
         name = "Second Message",
         category = "General",
         subcategory = "Secondary Message",
-        description = "Enable a secondary message following your first GG"
+        description = "Enable a secondary message following your first Bruh"
     )
     private boolean secondaryEnabled;
 
@@ -99,7 +99,7 @@ public class AutoGGConfig extends Vigilant {
         category = "General",
         subcategory = "Secondary Message",
         description = "Choose a secondary message",
-        options = {"Have a good day!", "<3", "AutoGG By Sk1er!"}
+        options = {"Have a good day!", "bruh(x2)", "AutoBruh By Proudmuslim!"}
     )
     private int autoGGPhrase2 = 1;
 
@@ -150,7 +150,7 @@ public class AutoGGConfig extends Vigilant {
     }
 
     public AutoGGConfig() {
-        super(new File("./config/autogg.toml"));
+        super(new File("./config/autobruh.toml"));
         initialize();
     }
 }

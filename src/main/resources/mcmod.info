@@ -1,18 +1,19 @@
 [
   {
-    "modid": "autogg",
-    "name": "AutoGG",
-    "description": "AutoGG automatically says a selectable phrase after a game has ended on supported servers.",
+    "modid": "autobruh",
+    "name": "AutoBruh",
+    "description": "AutoBruh automatically says a selectable phrase after a game has ended on supported servers.",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "https://sk1er.club/",
+    "url": "https://",
     "updateUrl": "",
     "authorList": [
       "2Pi",
       "Sk1er LLC",
-      "SirNapkin1334"
+      "SirNapkin1334",
+      "𝓟𝓻𝓸𝓾𝓭𝓶𝓾𝓼𝓵𝓲𝓶#5818 (QuietlyCoding)"
     ],
-    "credits": "Created by 2PI, maintained and updated by Sk1er LLC. Regex update created by SirNapkin1334.",
+    "credits": "Created by 2PI, maintained and updated by Sk1er LLC. Regex update created by SirNapkin1334. Coverted to AutoBruh by 𝓟𝓻𝓸𝓾𝓭𝓶𝓾𝓼𝓵𝓲𝓶#5818 (QuietlyCoding)",
     "logoFile": "",
     "screenshots": [],
     "dependencies": []

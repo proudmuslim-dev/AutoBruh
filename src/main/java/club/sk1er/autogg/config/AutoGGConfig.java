@@ -80,7 +80,7 @@ public class AutoGGConfig extends Vigilant {
         category = "General",
         subcategory = "General",
         description = "Choose what message is said on game completion",
-        options = {"Bruh", "Gruh", "buh", "druh", "cringe", "gringe", "gringecells", "eࠀz /s"}
+        options = {"Bruh", "Gruh", "buh", "druh", "cringe", "gringe", "gringecells", "e\u0800z /s"}
     )
     private int autoGGPhrase = 1;
 
